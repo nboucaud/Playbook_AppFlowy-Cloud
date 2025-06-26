@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login for Playbooks</title>
+    <style>
+        html,
+        body {
+            height: 100%;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #e6f7f6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            background: #fff;
+            max-width: 480px;
+            margin: 40px auto;
+            padding: 32px 24px;
+            border-radius: 10px;
+            box-shadow: 0 2px 12px rgba(104, 210, 203, 0.10);
+            border-top: 6px solid #68d2cb;
+            text-align: center;
+        }
+
+        .logo {
+            display: block;
+            margin: 10px auto 0px auto;
+            width: 150px;
+            text-align: center;
+        }
+
+        h2 {
+            color: #2b6e6a;
+            margin-bottom: 16px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            background: #68d2cb;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+            box-shadow: 0 2px 6px rgba(104, 210, 203, 0.15);
+        }
+
+        .btn:hover {
+            background: #4bbab2;
+        }
+
+        .footer {
+            margin-top: 32px;
+            font-size: 12px;
+            color: #7bbdb8;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Login for Playbooks</h2>
+        <p>Hello,</p>
+        <p>You requested a secure link to sign in to your account. </p>
+        <p>🔐 Click the link below to sign in instantly:</p>
+        <p>
+            <a href="{{ .ConfirmationURL }}" class="btn" target="_blank">Login to Playbooks</a>
+        </p>
+        <p>This link will expire in 10 minutes for your security.</p>
+        <p>If you didn't request this, you can safely ignore this message.</p>
+        <p>Thanks,<br>
+            The Infogito Team
+            <img class="logo"
+                src="https://cdn.prod.website-files.com/6775499c25b56812bb31bdba/677c001be2f2a17863d194a5_logo.svg"
+                alt="Infogito Logo">
+        </p>
+        <div class="footer">
+            &copy; Infogito Team. All rights reserved.
+        </div>
+    </div>
+</body>
+
+</html>
