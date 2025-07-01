@@ -212,7 +212,7 @@ services:
 
   appflowy_web:
     restart: on-failure
-    image: appflowyinc/appflowy_web:${APPFLOWY_WEB_VERSION:-latest}
+    image: appflowy-web
     depends_on:
       - appflowy_cloud
 volumes:
